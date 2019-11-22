@@ -1,0 +1,866 @@
+
+@article{chernozhukov_double/debiased_2016,
+	title = {Double/{Debiased} {Machine} {Learning} for {Treatment} and {Causal} {Parameters}},
+	url = {http://arxiv.org/abs/1608.00060},
+	abstract = {We revisit the classic semiparametric problem of inference on a low dimensional parameter θ0 in the presence of high-dimensional nuisance parameters η0. We depart from the classical setting by allowing for η0 to be so high-dimensional that the traditional assumptions, such as Donsker properties, that limit complexity of the parameter space for this object break down. To estimate η0, we consider the use of statistical or machine learning (ML) methods which are particularly well-suited to estimation in modern, very high-dimensional cases. ML methods perform well by employing regularization to reduce variance and trading oﬀ regularization bias with overﬁtting in practice. However, both regularization bias and overﬁtting in estimating η0 cause a heavy bias in estimators of θ0 that are obtained by naively plugging ML estimators of η0 into estimating equations for θ0. This bias results in the naive estimator failing to be N −1/2 consistent, where N is the sample size. We show that the impact of regularization bias and overﬁtting on estimation of the parameter of interest θ0 can be removed by using two simple, yet critical, ingredients: (1) using Neyman-orthogonal moments/scores that have reduced sensitivity with respect to nuisance parameters to estimate θ0, and (2) making use of cross-ﬁtting which provides an eﬃcient form of data-splitting. We call the resulting set of methods double or debiased ML (DML). We verify that DML delivers point estimators that concentrate in a N −1/2-neighborhood of the true parameter values and are approximately unbiased and normally distributed, which allows construction of valid conﬁdence statements. The generic statistical theory of DML is elementary and simultaneously relies on only weak theoretical requirements which will admit the use of a broad array of modern ML methods for estimating the nuisance parameters such as random forests, lasso, ridge, deep neural nets, boosted trees, and various hybrids and ensembles of these methods. We illustrate the general theory by applying it to provide theoretical properties of DML applied to learn the main regression parameter in a partially linear regression model, DML applied to learn the coeﬃcient on an endogenous variable in a partially linear instrumental variables model, DML applied to learn the average treatment eﬀect and the average treatment eﬀect on the treated under unconfoundedness, and DML applied to learn the local average treatment eﬀect in an instrumental variables setting. In addition to these theoretical applications, we also illustrate the use of DML in three empirical examples.},
+	language = {en},
+	urldate = {2018-10-30},
+	journal = {arXiv:1608.00060 [econ, stat]},
+	author = {Chernozhukov, Victor and Chetverikov, Denis and Demirer, Mert and Duflo, Esther and Hansen, Christian and Newey, Whitney and Robins, James},
+	month = jul,
+	year = {2016},
+	note = {arXiv: 1608.00060},
+	keywords = {Statistics - Machine Learning, 62G, Economics - Econometrics},
+	annote = {Comment: 71 pages, 2 figures},
+	file = {Chernozhukov et al. - 2016 - DoubleDebiased Machine Learning for Treatment and.pdf:C\:\\Users\\alex\\Zotero\\storage\\KP42565I\\Chernozhukov et al. - 2016 - DoubleDebiased Machine Learning for Treatment and.pdf:application/pdf}
+}
+
+@book{hernan_causal_nodate,
+	title = {Causal {Inference}},
+	url = {https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2018/08/hernanrobins_v1.10.36.pdf},
+	urldate = {2018-10-31},
+	publisher = {Boca Raton: Chapman \& Hall/CRC},
+	author = {Hernán, MA and Robins, JM},
+	file = {hernanrobins_v1.10.37.pdf:C\:\\Users\\alex\\Zotero\\storage\\I7GRYPVZ\\hernanrobins_v1.10.37.pdf:application/pdf;hernanrobins_v2.17.19.pdf:C\:\\Users\\alex\\Zotero\\storage\\F2HRJPJ4\\hernanrobins_v2.17.19.pdf:application/pdf;hernanrobins_v3.21.5.pdf:C\:\\Users\\alex\\Zotero\\storage\\MSM3JACW\\hernanrobins_v3.21.5.pdf:application/pdf}
+}
+
+@article{powell_quantile_nodate,
+	title = {Quantile {Treatment} {Effects} in the {Presence} of {Covariates}},
+	abstract = {I propose a method to estimate unconditional quantile treatment eﬀects (QTEs) given one or multiple treatment variables, which may be discrete or continuous, even when it is necessary to condition on covariates. The estimator, Generalized Quantile Regression (GQR), is developed in an instrumental variable framework for generality to permit estimation of unconditional QTEs for endogenous policy variables, but is applicable in the conditionally exogenous case. The framework includes simultaneous equations models with nonadditive disturbances which are functions of both unobserved and observed factors. Quantile regression and instrumental variable quantile regression are special cases of GQR and available in this framework.},
+	language = {en},
+	author = {Powell, David and Corporation, Rand},
+	pages = {49},
+	file = {Powell and Corporation - Quantile Treatment Effects in the Presence of Cova.pdf:C\:\\Users\\alex\\Zotero\\storage\\LYB6A49T\\Powell and Corporation - Quantile Treatment Effects in the Presence of Cova.pdf:application/pdf}
+}
+
+@article{ogburn_causal_2014,
+	title = {Causal {Diagrams} for {Interference}},
+	volume = {29},
+	issn = {0883-4237},
+	url = {http://projecteuclid.org/euclid.ss/1421330547},
+	doi = {10.1214/14-STS501},
+	abstract = {The term “interference” has been used to describe any setting in which one subject’s exposure may affect another subject’s outcome. We use causal diagrams to distinguish among three causal mechanisms that give rise to interference. The ﬁrst causal mechanism by which interference can operate is a direct causal effect of one individual’s treatment on another individual’s outcome; we call this direct interference. Interference by contagion is present when one individual’s outcome may affect the outcomes of other individuals with whom he comes into contact. Then giving treatment to the ﬁrst individual could have an indirect effect on others through the treated individual’s outcome. The third pathway by which interference may operate is allocational interference. Treatment in this case allocates individuals to groups; through interactions within a group, individuals may affect one another’s outcomes in any number of ways. In many settings, more than one type of interference will be present simultaneously. The causal effects of interest differ according to which types of interference are present, as do the conditions under which causal effects are identiﬁable. Using causal diagrams for interference, we describe these differences, give criteria for the identiﬁcation of important causal effects, and discuss applications to infectious diseases.},
+	language = {en},
+	number = {4},
+	urldate = {2018-12-05},
+	journal = {Statistical Science},
+	author = {Ogburn, Elizabeth L. and VanderWeele, Tyler J.},
+	month = nov,
+	year = {2014},
+	pages = {559--578},
+	file = {Ogburn and VanderWeele - 2014 - Causal Diagrams for Interference.pdf:C\:\\Users\\alex\\Zotero\\storage\\GZYLPVE7\\Ogburn and VanderWeele - 2014 - Causal Diagrams for Interference.pdf:application/pdf}
+}
+
+@article{raykov_can_2001,
+	title = {Can {There} {Be} {Infinitely} {Many} {Models} {Equivalent} to a {Given} {Covariance} {Structure} {Model}?},
+	volume = {8},
+	issn = {1070-5511, 1532-8007},
+	url = {http://www.tandfonline.com/doi/abs/10.1207/S15328007SEM0801_8},
+	doi = {10.1207/S15328007SEM0801_8},
+	language = {en},
+	number = {1},
+	urldate = {2018-12-16},
+	journal = {Structural Equation Modeling: A Multidisciplinary Journal},
+	author = {Raykov, Tenko and Marcoulides, George A.},
+	month = jan,
+	year = {2001},
+	pages = {142--149},
+	file = {Raykov and Marcoulides - 2001 - Can There Be Infinitely Many Models Equivalent to .pdf:C\:\\Users\\alex\\Zotero\\storage\\VD8PUT76\\Raykov and Marcoulides - 2001 - Can There Be Infinitely Many Models Equivalent to .pdf:application/pdf}
+}
+
+@article{pek_validity_2016,
+	title = {On the ({In}){Validity} of {Tests} of {Simple} {Mediation}: {Threats} and {Solutions}: ({In}){Validity} of {Tests} of {Simple} {Mediation}},
+	volume = {10},
+	issn = {17519004},
+	shorttitle = {On the ({In}){Validity} of {Tests} of {Simple} {Mediation}},
+	url = {http://doi.wiley.com/10.1111/spc3.12237},
+	doi = {10.1111/spc3.12237},
+	abstract = {Mediation analysis is a popular framework for identifying underlying mechanisms in social psychology. In the context of simple mediation, we review and discuss the implications of three facets of mediation analysis: (a) conceptualization of the relations between the variables, (b) statistical approaches, and (c) relevant elements of design. We also highlight the issue of equivalent models that are inherent in simple mediation. The extent to which results are meaningful stem directly from choices regarding these three facets of mediation analysis. We conclude by discussing how mediation analysis can be better applied to examine causal processes, highlight the limits of simple mediation, and make recommendations for better practice.},
+	language = {en},
+	number = {3},
+	urldate = {2018-12-16},
+	journal = {Social and Personality Psychology Compass},
+	author = {Pek, Jolynn and Hoyle, Rick H.},
+	month = mar,
+	year = {2016},
+	pages = {150--163},
+	file = {Pek and Hoyle - 2016 - On the (In)Validity of Tests of Simple Mediation .pdf:C\:\\Users\\alex\\Zotero\\storage\\UUITNZMC\\Pek and Hoyle - 2016 - On the (In)Validity of Tests of Simple Mediation .pdf:application/pdf}
+}
+
+@book{blumberg_causal_2016,
+	title = {Causal {Inference} for {Statistics}, {Social}, and {Biomedical} {Sciences}: {An} {Introduction}},
+	volume = {84},
+	shorttitle = {Causal {Inference} for {Statistics}, {Social}, and {Biomedical} {Sciences}},
+	url = {http://doi.wiley.com/10.1111/insr.12170},
+	language = {en},
+	urldate = {2018-12-16},
+	author = {Blumberg, Carol Joyce},
+	month = apr,
+	year = {2016},
+	file = {Blumberg - 2016 - Causal Inference for Statistics, Social, and Biome.pdf:C\:\\Users\\alex\\Zotero\\storage\\5QMTCK98\\Blumberg - 2016 - Causal Inference for Statistics, Social, and Biome.pdf:application/pdf}
+}
+
+@article{eckles_bias_2017,
+	title = {Bias and high-dimensional adjustment in observational studies of peer effects},
+	url = {http://arxiv.org/abs/1706.04692},
+	abstract = {Peer effects, in which the behavior of an individual is affected by the behavior of their peers, are posited by multiple theories in the social sciences. Other processes can also produce behaviors that are correlated in networks and groups, thereby generating debate about the credibility of observational (i.e. nonexperimental) studies of peer effects. Randomized ﬁeld experiments that identify peer effects, however, are often expensive or infeasible. Thus, many studies of peer effects use observational data, and prior evaluations of causal inference methods for adjusting observational data to estimate peer effects have lacked an experimental “gold standard” for comparison. Here we show, in the context of information and media diffusion on Facebook, that high-dimensional adjustment of a nonexperimental control group (677 million observations) using propensity score models produces estimates of peer effects statistically indistinguishable from those from using a large randomized experiment (220 million observations). Naive observational estimators overstate peer effects by 320\% and commonly used variables (e.g., demographics) offer little bias reduction, but adjusting for a measure of prior behaviors closely related to the focal behavior reduces bias by 91\%. High-dimensional models adjusting for over 3,700 past behaviors provide additional bias reduction, such that the full model reduces bias by over 97\%. This experimental evaluation demonstrates that detailed records of individuals’ past behavior can improve studies of social inﬂuence, information diffusion, and imitation; these results are encouraging for the credibility of some studies but also cautionary for studies of rare or new behaviors. More generally, these results show how large, high-dimensional data sets and statistical learning techniques can be used to improve causal inference in the behavioral sciences.},
+	language = {en},
+	urldate = {2019-01-06},
+	journal = {arXiv:1706.04692 [cs, stat]},
+	author = {Eckles, Dean and Bakshy, Eytan},
+	month = jun,
+	year = {2017},
+	note = {arXiv: 1706.04692},
+	keywords = {Statistics - Machine Learning, Statistics - Methodology, 62P25, 62P30, 91D30, Computer Science - Social and Information Networks, G.3, J.4, Statistics - Applications},
+	annote = {Comment: 25 pages, 3 figures, 2 tables; supplementary information as ancillary file},
+	file = {Eckles and Bakshy - 2017 - Bias and high-dimensional adjustment in observatio.pdf:C\:\\Users\\alex\\Zotero\\storage\\XPGW56NV\\Eckles and Bakshy - 2017 - Bias and high-dimensional adjustment in observatio.pdf:application/pdf}
+}
+
+@article{krieger_reply_2018,
+	title = {Reply to {Pearl}: {Algorithm} of the truth vs real-world science (letter)},
+	language = {en},
+	author = {Krieger, From Nancy and Smith, George Davey},
+	year = {2018},
+	pages = {3},
+	file = {Krieger and Smith - 2018 - Reply to Pearl Algorithm of the truth vs real-wor.pdf:C\:\\Users\\alex\\Zotero\\storage\\U3HLWEGN\\Krieger and Smith - 2018 - Reply to Pearl Algorithm of the truth vs real-wor.pdf:application/pdf}
+}
+
+@article{subbaswamy_counterfactual_2018,
+	title = {Counterfactual {Normalization}: {Proactively} {Addressing} {Dataset} {Shift} and {Improving} {Reliability} {Using} {Causal} {Mechanisms}},
+	shorttitle = {Counterfactual {Normalization}},
+	url = {http://arxiv.org/abs/1808.03253},
+	abstract = {Predictive models can fail to generalize from training to deployment environments because of dataset shift, posing a threat to model reliability and the safety of downstream decisions made in practice. Instead of using samples from the target distribution to reactively correct dataset shift, we use graphical knowledge of the causal mechanisms relating variables in a prediction problem to proactively remove relationships that do not generalize across environments, even when these relationships may depend on unobserved variables (violations of the “no unobserved confounders” assumption). To accomplish this, we identify variables with unstable paths of statistical inﬂuence and remove them from the model. We also augment the causal graph with latent counterfactual variables that isolate unstable paths of statistical inﬂuence, allowing us to retain stable paths that would otherwise be removed. Our experiments demonstrate that models that remove vulnerable variables and use estimates of the latent variables transfer better, often outperforming in the target domain despite some accuracy loss in the training domain.},
+	language = {en},
+	urldate = {2019-01-08},
+	journal = {arXiv:1808.03253 [cs, stat]},
+	author = {Subbaswamy, Adarsh and Saria, Suchi},
+	month = aug,
+	year = {2018},
+	note = {arXiv: 1808.03253},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: Proceedings of the 34th Conference on Uncertainty in Artificial Intelligence (UAI), 2018. Revised from print version},
+	file = {Subbaswamy and Saria - 2018 - Counterfactual Normalization Proactively Addressi.pdf:C\:\\Users\\alex\\Zotero\\storage\\9JCP2H69\\Subbaswamy and Saria - 2018 - Counterfactual Normalization Proactively Addressi.pdf:application/pdf}
+}
+
+@article{tucci_introduction_2013,
+	title = {Introduction to {Judea} {Pearl}'s {Do}-{Calculus}},
+	url = {http://arxiv.org/abs/1305.5506},
+	abstract = {This is a purely pedagogical paper with no new results. The goal of the paper is to give a fairly self-contained introduction to Judea Pearl’s do-calculus, including proofs of his 3 rules.},
+	language = {en},
+	urldate = {2019-01-10},
+	journal = {arXiv:1305.5506 [cs]},
+	author = {Tucci, Robert R.},
+	month = apr,
+	year = {2013},
+	note = {arXiv: 1305.5506},
+	keywords = {Computer Science - Artificial Intelligence},
+	annote = {Comment: 16 pages (11 files: 1 .tex, 1 .sty, 9 .jpg)},
+	file = {Tucci - 2013 - Introduction to Judea Pearl's Do-Calculus.pdf:C\:\\Users\\alex\\Zotero\\storage\\ERTGNNNR\\Tucci - 2013 - Introduction to Judea Pearl's Do-Calculus.pdf:application/pdf}
+}
+
+@article{forastiere_estimating_2018,
+	title = {Estimating {Causal} {Effects} {Under} {Interference} {Using} {Bayesian} {Generalized} {Propensity} {Scores}},
+	url = {http://arxiv.org/abs/1807.11038},
+	abstract = {In most real-world systems units are interconnected and can be represented as networks consisting of nodes and edges. For instance, in social systems individuals can have social ties, family or ﬁnancial relationships. In settings where some units are exposed to a treatment and its eﬀect spills over connected units, estimating both the direct eﬀect of the treatment and spillover eﬀects presents several challenges. First, assumptions on the way and the extent to which spillover eﬀects occur along the observed network are required. Second, in observational studies, where the treatment assignment is not under the control of the investigator, confounding and homophily are potential threats to the identiﬁcation and estimation of causal eﬀects on networks. Here, we make two structural assumptions: i) neighborhood interference, which assumes interference operates only through a function of the immediate neighbors’ treatments ii) unconfoundedness of the individual and neighborhood treatment, which rules out the presence of unmeasured confounding variables, including those driving homophily. Under these assumptions we develop a new covariate-adjustment estimator for treatment and spillover eﬀects in observational studies on networks. Estimation is based on a generalized propensity score that balances individual and neighborhood covariates across units under diﬀerent levels of individual treatment and of exposure to neighbors’ treatment. Adjustment for propensity score is performed using a penalized spline regression. Inference capitalizes on a three-step Bayesian procedure which allows to take into account the uncertainty in the propensity score estimation and avoiding model feedback. Finally, correlation of interacting units is taken into account using a community detection algorithm and incorporating random eﬀects in the outcome model. All these sources of variability, including variability of treatment assignment, are accounted for in the posterior distribution of ﬁnite-sample causal estimands. We conducted a simulation study where we assess the performance of our estimator on diﬀerent type of networks, generated from a stochastic block model and a latent space model or given from the friendship-network of the Add-Health study.},
+	language = {en},
+	urldate = {2019-01-10},
+	journal = {arXiv:1807.11038 [stat]},
+	author = {Forastiere, Laura and Mealli, Fabrizia and Wu, Albert and Airoldi, Edoardo},
+	month = jul,
+	year = {2018},
+	note = {arXiv: 1807.11038},
+	keywords = {Statistics - Methodology},
+	annote = {Comment: arXiv admin note: text overlap with arXiv:1610.06511 by other authors},
+	file = {Forastiere et al. - 2018 - Estimating Causal Effects Under Interference Using.pdf:C\:\\Users\\alex\\Zotero\\storage\\KDR54KC3\\Forastiere et al. - 2018 - Estimating Causal Effects Under Interference Using.pdf:application/pdf}
+}
+
+@article{van_der_laan_causal_nodate,
+	title = {Causal {Inference} for {Networks}},
+	url = {https://biostats.bepress.com/cgi/viewcontent.cgi?article=1303&context=ucbbiostat},
+	urldate = {2019-01-10},
+	author = {van der Laan, Mark},
+	file = {van der Laan - Causal Inference for Networks.pdf:C\:\\Users\\alex\\Zotero\\storage\\G86CWBS5\\van der Laan - Causal Inference for Networks.pdf:application/pdf}
+}
+
+@incollection{gabbay_bayesianism_2001,
+	address = {Dordrecht},
+	title = {Bayesianism and {Causality}, or, {Why} {I} am {Only} a {Half}-{Bayesian}},
+	volume = {24},
+	isbn = {978-90-481-5920-8 978-94-017-1586-7},
+	url = {http://link.springer.com/10.1007/978-94-017-1586-7_2},
+	language = {en},
+	urldate = {2019-02-06},
+	booktitle = {Foundations of {Bayesianism}},
+	publisher = {Springer Netherlands},
+	author = {Pearl, Judea},
+	editor = {Gabbay, Dov M. and Barwise, Jon and Corfield, David and Williamson, Jon},
+	year = {2001},
+	doi = {10.1007/978-94-017-1586-7_2},
+	pages = {19--36},
+	file = {Pearl - 2001 - Bayesianism and Causality, or, Why I am Only a Hal.pdf:C\:\\Users\\alex\\Zotero\\storage\\L4FADVV7\\Pearl - 2001 - Bayesianism and Causality, or, Why I am Only a Hal.pdf:application/pdf}
+}
+
+@article{pearl_interpretation_nodate,
+	title = {On the {Interpretation} of do(x)},
+	abstract = {This paper provides empirical interpretation of the do(x) operator when applied to non-manipulable variables such as race, obesity, or cholesterol level. We view do(x) as an ideal intervention that provides valuable information on the eﬀects of manipulable variables and is thus empirically testable. We draw parallels between this interpretation and ways of enabling machines to learn eﬀects of untried actions from those tried. We end with the conclusion that researchers need not distinguish manipulable from non-manipulable variables; both types are equally eligible to receive the do(x) operator and both beneﬁt researchers by evaluating its impact.},
+	language = {en},
+	author = {Pearl, Judea},
+	pages = {9},
+	file = {Pearl - On the Interpretation of do(x).pdf:C\:\\Users\\alex\\Zotero\\storage\\E4V354XF\\Pearl - On the Interpretation of do(x).pdf:application/pdf}
+}
+
+@article{samii_retrospective_2016,
+	title = {Retrospective {Causal} {Inference} with {Machine} {Learning} {Ensembles}: {An} {Application} to {Anti}-{Recidivism} {Policies} in {Colombia}},
+	shorttitle = {Retrospective {Causal} {Inference} with {Machine} {Learning} {Ensembles}},
+	url = {http://arxiv.org/abs/1607.03026},
+	abstract = {We present new methods to estimate causal effects retrospectively from micro data with the assistance of a machine learning ensemble. This approach overcomes two important limitations in conventional methods like regression modeling or matching: (i) ambiguity about the pertinent retrospective counterfactuals and (ii) potential misspeciﬁcation, overﬁtting, and otherwise bias-prone or inefﬁcient use of a large identifying covariate set in the estimation of causal effects. Our method targets the analysis toward a well deﬁned “retrospective intervention effect” (RIE) based on hypothetical population interventions and applies a machine learning ensemble that allows data to guide us, in a controlled fashion, on how to use a large identifying covariate set. We illustrate with an analysis of policy options for reducing ex-combatant recidivism in Colombia.},
+	language = {en},
+	urldate = {2019-02-07},
+	journal = {arXiv:1607.03026 [stat]},
+	author = {Samii, Cyrus and Paler, Laura and Daly, Sarah Zukerman},
+	month = jul,
+	year = {2016},
+	note = {arXiv: 1607.03026},
+	keywords = {Statistics - Machine Learning},
+	file = {Samii et al. - 2016 - Retrospective Causal Inference with Machine Learni.pdf:C\:\\Users\\alex\\Zotero\\storage\\LUKLC4GC\\Samii et al. - 2016 - Retrospective Causal Inference with Machine Learni.pdf:application/pdf}
+}
+
+@book{laan_targeted_2011,
+	address = {New York},
+	series = {Springer series in statistics},
+	title = {Targeted learning: causal inference for observational and experimental data},
+	isbn = {978-1-4419-9781-4 978-1-4419-9782-1},
+	shorttitle = {Targeted learning},
+	language = {en},
+	publisher = {Springer},
+	author = {Laan, M. J. van der and Rose, Sherri},
+	year = {2011},
+	note = {OCLC: ocn731921833},
+	keywords = {Mathematical statistics, Inference},
+	file = {Laan and Rose - 2011 - Targeted learning causal inference for observatio.pdf:C\:\\Users\\alex\\Zotero\\storage\\EM4CP7TJ\\Laan and Rose - 2011 - Targeted learning causal inference for observatio.pdf:application/pdf}
+}
+
+@article{scholkopf_causal_nodate,
+	title = {On {Causal} and {Anticausal} {Learning}},
+	abstract = {We consider the problem of function estimation in the case where an underlying causal model can be inferred. This has implications for popular scenarios such as covariate shift, concept drift, transfer learning and semi-supervised learning. We argue that causal knowledge may facilitate some approaches for a given problem, and rule out others. In particular, we formulate a hypothesis for when semi-supervised learning can help, and corroborate it with empirical results.},
+	language = {en},
+	author = {Schölkopf, Bernhard and Janzing, Dominik and Peters, Jonas and Sgouritsa, Eleni and Zhang, Kun and Mooij, Joris},
+	pages = {8},
+	file = {Schölkopf et al. - On Causal and Anticausal Learning.pdf:C\:\\Users\\alex\\Zotero\\storage\\DM469QKT\\Schölkopf et al. - On Causal and Anticausal Learning.pdf:application/pdf}
+}
+
+@article{schuler_targeted_2017,
+	title = {Targeted {Maximum} {Likelihood} {Estimation} for {Causal} {Inference} in {Observational} {Studies}},
+	volume = {185},
+	issn = {0002-9262, 1476-6256},
+	url = {https://academic.oup.com/aje/article-lookup/doi/10.1093/aje/kww165},
+	doi = {10.1093/aje/kww165},
+	language = {en},
+	number = {1},
+	urldate = {2019-02-21},
+	journal = {American Journal of Epidemiology},
+	author = {Schuler, Megan S. and Rose, Sherri},
+	month = jan,
+	year = {2017},
+	pages = {65--73},
+	file = {Schuler and Rose - 2017 - Targeted Maximum Likelihood Estimation for Causal .pdf:C\:\\Users\\alex\\Zotero\\storage\\QUJZAQMA\\Schuler and Rose - 2017 - Targeted Maximum Likelihood Estimation for Causal .pdf:application/pdf}
+}
+
+@article{tan_bayesian_2019,
+	title = {Bayesian additive regression trees and the {General} {BART} model},
+	url = {http://arxiv.org/abs/1901.07504},
+	abstract = {Bayesian additive regression trees (BART) is a ﬂexible prediction model/machine learning approach that has gained widespread popularity in recent years. As BART becomes more mainstream, there is an increased need for a paper that walks readers through the details of BART, from what it is to why it works. This tutorial is aimed at providing such a resource. In addition to explaining the diﬀerent components of BART using simple examples, we also discuss a framework, the General BART model, that uniﬁes some of the recent BART extensions, including semiparametric models, correlated outcomes, statistical matching problems in surveys, and models with weaker distributional assumptions. By showing how these models ﬁt into a single framework, we hope to demonstrate a simple way of applying BART to research problems that go beyond the original independent continuous or binary outcomes framework.},
+	language = {en},
+	urldate = {2019-02-25},
+	journal = {arXiv:1901.07504 [stat]},
+	author = {Tan, Yaoyuan Vincent and Roy, Jason},
+	month = jan,
+	year = {2019},
+	note = {arXiv: 1901.07504},
+	keywords = {Statistics - Applications},
+	file = {Tan and Roy - 2019 - Bayesian additive regression trees and the General.pdf:C\:\\Users\\alex\\Zotero\\storage\\AH89KGAK\\Tan and Roy - 2019 - Bayesian additive regression trees and the General.pdf:application/pdf}
+}
+
+@article{david_beware_nodate,
+	title = {Beware of the {DAG}!},
+	author = {David, A. Phillip},
+	file = {David - Beware of the DAG!.pdf:C\:\\Users\\alex\\Zotero\\storage\\PRY5ER6P\\David - Beware of the DAG!.pdf:application/pdf}
+}
+
+@article{lugue-fernandez_targeted_nodate,
+	title = {Targeted maximum likelihood estimation for a binary treatment: {A} tutorial},
+	author = {Lugue-Fernandez, Miguel Angel and Schomaker, Michael and Schnitzer, Mireille E},
+	file = {Lugue-Fernandez et al. - Targeted maximum likelihood estimation for a binar.pdf:C\:\\Users\\alex\\Zotero\\storage\\L2CCSWVH\\Lugue-Fernandez et al. - Targeted maximum likelihood estimation for a binar.pdf:application/pdf}
+}
+
+@book{van_der_laan_targeted_2018,
+	address = {Cham},
+	series = {Springer {Series} in {Statistics}},
+	title = {Targeted {Learning} in {Data} {Science}},
+	isbn = {978-3-319-65303-7 978-3-319-65304-4},
+	url = {http://link.springer.com/10.1007/978-3-319-65304-4},
+	language = {en},
+	urldate = {2019-03-08},
+	publisher = {Springer International Publishing},
+	author = {van der Laan, Mark J. and Rose, Sherri},
+	year = {2018},
+	doi = {10.1007/978-3-319-65304-4},
+	file = {van der Laan and Rose - 2018 - Targeted Learning in Data Science.pdf:C\:\\Users\\alex\\Zotero\\storage\\SVHFAE8X\\van der Laan and Rose - 2018 - Targeted Learning in Data Science.pdf:application/pdf}
+}
+
+@article{shalizi_estimating_2016,
+	title = {Estimating {Causal} {Peer} {Influence} in {Homophilous} {Social} {Networks} by {Inferring} {Latent} {Locations}},
+	url = {http://arxiv.org/abs/1607.06565},
+	abstract = {Social inﬂuence cannot be identiﬁed from purely observational data on social networks, because such inﬂuence is generically confounded with latent homophily, i.e., with a node’s network partners being informative about the node’s attributes and therefore its behavior. We show that if the network grows according to either a latent community (stochastic block) model, or a continuous latent space model, then latent homophilous attributes can be consistently estimated from the global pattern of social ties. Moreover, these estimates are informative enough that controlling for them allows for unbiased and consistent estimation of social-inﬂuence eﬀects in additive models. In addition, we provide bounds on the potential bias in estimates of social-inﬂuence for ﬁnite samples. These are the ﬁrst results on the consistent estimation of social-inﬂuence eﬀects in the presence of latent homophily, and we discuss the prospects for generalizing them.},
+	language = {en},
+	urldate = {2019-03-15},
+	journal = {arXiv:1607.06565 [physics, stat]},
+	author = {Shalizi, Cosma Rohilla and McFowland III, Edward},
+	month = jul,
+	year = {2016},
+	note = {arXiv: 1607.06565},
+	keywords = {Statistics - Methodology, Computer Science - Social and Information Networks, Physics - Physics and Society},
+	annote = {Comment: 19 pages, 1 figure},
+	file = {Shalizi and McFowland III - 2016 - Estimating Causal Peer Influence in Homophilous So.pdf:C\:\\Users\\alex\\Zotero\\storage\\YCPDYW9R\\Shalizi and McFowland III - 2016 - Estimating Causal Peer Influence in Homophilous So.pdf:application/pdf}
+}
+
+@article{damour_multi-cause_2019,
+	title = {On {Multi}-{Cause} {Causal} {Inference} with {Unobserved} {Confounding}: {Counterexamples}, {Impossibility}, and {Alternatives}},
+	shorttitle = {On {Multi}-{Cause} {Causal} {Inference} with {Unobserved} {Confounding}},
+	url = {http://arxiv.org/abs/1902.10286},
+	abstract = {Unobserved confounding is a central barrier to drawing causal inferences from observational data. Several authors have recently proposed that this barrier can be overcome in the case where one attempts to infer the eﬀects of several variables simultaneously. In this paper, we present two simple, analytical counterexamples that challenge the general claims that are central to these approaches. In addition, we show that nonparametric identiﬁcation is impossible in this setting. We discuss practical implications, and suggest alternatives to the methods that have been proposed so far in this line of work: using proxy variables and shifting focus to sensitivity analysis.},
+	language = {en},
+	urldate = {2019-03-15},
+	journal = {arXiv:1902.10286 [cs, stat]},
+	author = {D'Amour, Alexander},
+	month = feb,
+	year = {2019},
+	note = {arXiv: 1902.10286},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: Accepted to AISTATS 2019},
+	file = {D'Amour - 2019 - On Multi-Cause Causal Inference with Unobserved Co.pdf:C\:\\Users\\alex\\Zotero\\storage\\VQIG2ZJ9\\D'Amour - 2019 - On Multi-Cause Causal Inference with Unobserved Co.pdf:application/pdf}
+}
+
+@article{berry_chill_nodate,
+	title = {A chill intro to causal inference via propensity scores},
+	url = {https://osf.io/ncvqs},
+	doi = {10.31235/osf.io/ncvqs},
+	abstract = {Observational causal inference is hard. This introduction aims to present causal inference in an accessible and straightforward way, with terminology familiar to information scientists. Particular attention is devoted to propensity score methods, which are commonly used and also a frequent subject of confusion. Simulations demonstrate the key arguments, and pointers to reference material are provided.},
+	language = {en},
+	urldate = {2019-03-16},
+	author = {Berry, George},
+	file = {Berry - A chill intro to causal inference via propensity s.pdf:C\:\\Users\\alex\\Zotero\\storage\\ZQ8UWKU8\\Berry - A chill intro to causal inference via propensity s.pdf:application/pdf}
+}
+
+@article{uhler_geometry_2013,
+	title = {Geometry of the faithfulness assumption in causal inference},
+	volume = {41},
+	issn = {0090-5364},
+	url = {http://projecteuclid.org/euclid.aos/1366138197},
+	doi = {10.1214/12-AOS1080},
+	language = {en},
+	number = {2},
+	urldate = {2019-04-10},
+	journal = {The Annals of Statistics},
+	author = {Uhler, Caroline and Raskutti, Garvesh and Bühlmann, Peter and Yu, Bin},
+	month = apr,
+	year = {2013},
+	pages = {436--463},
+	file = {Uhler et al. - 2013 - Geometry of the faithfulness assumption in causal .pdf:C\:\\Users\\alex\\Zotero\\storage\\5KEA8MAC\\Uhler et al. - 2013 - Geometry of the faithfulness assumption in causal .pdf:application/pdf}
+}
+
+@article{huntington-klein_causal_nodate,
+	title = {Causal {Diagrams} {Cheat} {Sheet}},
+	language = {en},
+	author = {Huntington-Klein, Nick},
+	pages = {4},
+	file = {Huntington-Klein - Causal Diagrams Cheat Sheet.pdf:C\:\\Users\\alex\\Zotero\\storage\\9RJNEKEU\\Huntington-Klein - Causal Diagrams Cheat Sheet.pdf:application/pdf}
+}
+
+@article{besserve_group_nodate,
+	title = {Group invariance principles for causal generative models},
+	language = {en},
+	author = {Besserve, Michel and Shajarisales, Naji and Scholkopf, Bernhard and Janzing, Dominik},
+	pages = {9},
+	file = {Besserve et al. - Group invariance principles for causal generative .pdf:C\:\\Users\\alex\\Zotero\\storage\\RNZDGIQK\\Besserve et al. - Group invariance principles for causal generative .pdf:application/pdf}
+}
+
+@article{noauthor_irregular_2010,
+	title = {Irregular {Identification}, {Support} {Conditions}, and {Inverse} {Weight} {Estimation}},
+	volume = {78},
+	issn = {0012-9682},
+	url = {http://doi.wiley.com/10.3982/ECTA7372},
+	doi = {10.3982/ECTA7372},
+	language = {en},
+	number = {6},
+	urldate = {2019-04-27},
+	journal = {Econometrica},
+	year = {2010},
+	pages = {2021--2042},
+	file = {2010 - Irregular Identification, Support Conditions, and .pdf:C\:\\Users\\alex\\Zotero\\storage\\M9GKF4E5\\2010 - Irregular Identification, Support Conditions, and .pdf:application/pdf}
+}
+
+@book{aronow_foundations_2019,
+	edition = {1},
+	title = {Foundations of {Agnostic} {Statistics}},
+	isbn = {978-1-316-83176-2 978-1-107-17891-5 978-1-316-63114-0},
+	url = {https://www.cambridge.org/core/product/identifier/9781316831762/type/book},
+	language = {en},
+	urldate = {2019-04-27},
+	publisher = {Cambridge University Press},
+	author = {Aronow, Peter M. and Miller, Benjamin T.},
+	month = jan,
+	year = {2019},
+	doi = {10.1017/9781316831762},
+	file = {Aronow and Miller - 2019 - Foundations of Agnostic Statistics.pdf:C\:\\Users\\alex\\Zotero\\storage\\KWFKXNKM\\Aronow and Miller - 2019 - Foundations of Agnostic Statistics.pdf:application/pdf}
+}
+
+@article{noauthor_targeted_2005,
+	title = {Targeted {Learning}},
+	volume = {2},
+	language = {en},
+	number = {8},
+	journal = {Open access},
+	year = {2005},
+	pages = {143},
+	file = {2005 - Targeted Learning.pdf:C\:\\Users\\alex\\Zotero\\storage\\K8QH7M59\\2005 - Targeted Learning.pdf:application/pdf}
+}
+
+@article{rajkumar_ridge_2019,
+	title = {Ridge regularization for {Mean} {Squared} {Error} {Reduction} in {Regression} with {Weak} {Instruments}},
+	url = {http://arxiv.org/abs/1904.08580},
+	abstract = {In this paper, I show that classic two-stage least squares (2SLS) estimates are highly unstable with weak instruments. I propose a ridge estimator (ridge IV) and show that it is asymptotically normal even with weak instruments, whereas 2SLS is severely distorted and unbounded. I motivate the ridge IV estimator as a convex optimization problem with a GMM objective function and an L2 penalty. I show that ridge IV leads to sizable mean squared error reductions theoretically and validate these results in a simulation study inspired by data designs of papers published in the American Economic Review.},
+	language = {en},
+	urldate = {2019-05-12},
+	journal = {arXiv:1904.08580 [econ, math, stat]},
+	author = {Rajkumar, Karthik},
+	month = apr,
+	year = {2019},
+	note = {arXiv: 1904.08580},
+	keywords = {Economics - Econometrics, Mathematics - Statistics Theory},
+	annote = {Comment: 20 pages},
+	file = {1904.08580.pdf:C\:\\Users\\alex\\Zotero\\storage\\GRSAHNW3\\1904.08580.pdf:application/pdf}
+}
+
+@article{pearl_causal_nodate,
+	title = {Causal {Inference} in {Statistics}},
+	language = {en},
+	author = {Pearl, Judea},
+	pages = {159},
+	file = {Pearl - Causal Inference in Statistics.pdf:C\:\\Users\\alex\\Zotero\\storage\\DJXAN86P\\Pearl - Causal Inference in Statistics.pdf:application/pdf}
+}
+
+@article{huitfeldt_is_2016,
+	title = {Is caviar a risk factor for being a millionaire?},
+	issn = {1756-1833},
+	shorttitle = {Is caviar a risk factor for being a millionaire?},
+	url = {http://www.bmj.com/lookup/doi/10.1136/bmj.i6536},
+	doi = {10.1136/bmj.i6536},
+	language = {en},
+	urldate = {2019-05-12},
+	journal = {BMJ},
+	author = {Huitfeldt, Anders},
+	month = dec,
+	year = {2016},
+	pages = {i6536},
+	file = {Huitfeldt - 2016 - Is caviar a risk factor for being a millionaire .pdf:C\:\\Users\\alex\\Zotero\\storage\\DQ6BKTIU\\Huitfeldt - 2016 - Is caviar a risk factor for being a millionaire .pdf:application/pdf}
+}
+
+@article{aronow_does_2016,
+	title = {Does {Regression} {Produce} {Representative} {Estimates} of {Causal} {Effects}?: {REGRESSION} {AND} {REPRESENTATIVE} {CAUSAL} {EFFECTS}},
+	volume = {60},
+	issn = {00925853},
+	shorttitle = {Does {Regression} {Produce} {Representative} {Estimates} of {Causal} {Effects}?},
+	url = {http://doi.wiley.com/10.1111/ajps.12185},
+	doi = {10.1111/ajps.12185},
+	language = {en},
+	number = {1},
+	urldate = {2019-06-10},
+	journal = {American Journal of Political Science},
+	author = {Aronow, Peter M. and Samii, Cyrus},
+	month = jan,
+	year = {2016},
+	pages = {250--267},
+	file = {Aronow and Samii - 2016 - Does Regression Produce Representative Estimates o.pdf:C\:\\Users\\alex\\Zotero\\storage\\YAGZ7JMV\\Aronow and Samii - 2016 - Does Regression Produce Representative Estimates o.pdf:application/pdf}
+}
+
+@article{kang_demystifying_2007,
+	title = {Demystifying {Double} {Robustness}: {A} {Comparison} of {Alternative} {Strategies} for {Estimating} a {Population} {Mean} from {Incomplete} {Data}},
+	volume = {22},
+	issn = {0883-4237},
+	shorttitle = {Demystifying {Double} {Robustness}},
+	url = {http://projecteuclid.org/euclid.ss/1207580167},
+	doi = {10.1214/07-STS227},
+	abstract = {When outcomes are missing for reasons beyond an investigator’s control, there are two different ways to adjust a parameter estimate for covariates that may be related both to the outcome and to missingness. One approach is to model the relationships between the covariates and the outcome and use those relationships to predict the missing values. Another is to model the probabilities of missingness given the covariates and incorporate them into a weighted or stratiﬁed estimate. Doubly robust (DR) procedures apply both types of model simultaneously and produce a consistent estimate of the parameter if either of the two models has been correctly speciﬁed. In this article, we show that DR estimates can be constructed in many ways. We compare the performance of various DR and non-DR estimates of a population mean in a simulated example where both models are incorrect but neither is grossly misspeciﬁed. Methods that use inverse-probabilities as weights, whether they are DR or not, are sensitive to misspeciﬁcation of the propensity model when some estimated propensities are small. Many DR methods perform better than simple inverse-probability weighting. None of the DR methods we tried, however, improved upon the performance of simple regression-based prediction of the missing values. This study does not represent every missing-data problem that will arise in practice. But it does demonstrate that, in at least some settings, two wrong models are not better than one.},
+	language = {en},
+	number = {4},
+	urldate = {2019-06-12},
+	journal = {Statistical Science},
+	author = {Kang, Joseph D. Y. and Schafer, Joseph L.},
+	month = nov,
+	year = {2007},
+	pages = {523--539},
+	file = {Kang and Schafer - 2007 - Demystifying Double Robustness A Comparison of Al.pdf:C\:\\Users\\alex\\Zotero\\storage\\VVEZEGIZ\\Kang and Schafer - 2007 - Demystifying Double Robustness A Comparison of Al.pdf:application/pdf}
+}
+
+@article{athey_machine_nodate,
+	title = {Machine {Learning} {Methods} {Economists} {Should} {Know} {About}},
+	abstract = {We discuss the relevance of the recent Machine Learning (ML) literature for economics and econometrics. First we discuss the diﬀerences in goals, methods and settings between the ML literature and the traditional econometrics and statistics literatures. Then we discuss some speciﬁc methods from the machine learning literature that we view as important for empirical researchers in economics. These include supervised learning methods for regression and classiﬁcation, unsupervised learning methods, as well as matrix completion methods. Finally, we highlight newly developed methods at the intersection of ML and econometrics, methods that typically perform better than either oﬀ-the-shelf ML or more traditional econometric methods when applied to particular classes of problems, problems that include causal inference for average treatment eﬀects, optimal policy estimation, and estimation of the counterfactual eﬀect of price changes in consumer choice models.},
+	language = {en},
+	author = {Athey, Susan and Imbens, Guido W},
+	pages = {62},
+	file = {Athey and Imbens - Machine Learning Methods Economists Should Know Ab.pdf:C\:\\Users\\alex\\Zotero\\storage\\MJQZ5HFU\\Athey and Imbens - Machine Learning Methods Economists Should Know Ab.pdf:application/pdf}
+}
+
+@article{brodersen_inferring_2015,
+	title = {Inferring causal impact using {Bayesian} structural time-series models},
+	volume = {9},
+	issn = {1932-6157},
+	url = {http://projecteuclid.org/euclid.aoas/1430226092},
+	doi = {10.1214/14-AOAS788},
+	language = {en},
+	number = {1},
+	urldate = {2019-06-28},
+	journal = {The Annals of Applied Statistics},
+	author = {Brodersen, Kay H. and Gallusser, Fabian and Koehler, Jim and Remy, Nicolas and Scott, Steven L.},
+	month = mar,
+	year = {2015},
+	pages = {247--274},
+	file = {Brodersen et al. - 2015 - Inferring causal impact using Bayesian structural .pdf:C\:\\Users\\alex\\Zotero\\storage\\QU5688CX\\Brodersen et al. - 2015 - Inferring causal impact using Bayesian structural .pdf:application/pdf}
+}
+
+@article{aalen_can_2016,
+	title = {Can we believe the {DAGs}? {A} comment on the relationship between causal {DAGs} and mechanisms},
+	volume = {25},
+	issn = {0962-2802, 1477-0334},
+	shorttitle = {Can we believe the {DAGs}?},
+	url = {http://journals.sagepub.com/doi/10.1177/0962280213520436},
+	doi = {10.1177/0962280213520436},
+	abstract = {Directed acyclic graphs (DAGs) play a large role in the modern approach to causal inference. DAGs describe the relationship between measurements taken at various discrete times including the effect of interventions. The causal mechanisms, on the other hand, would naturally be assumed to be a continuous process operating over time in a cause–effect fashion. How does such immediate causation, that is causation occurring over very short time intervals, relate to DAGs constructed from discrete observations? We introduce a time-continuous model and simulate discrete observations in order to judge the relationship between the DAG and the immediate causal model. We find that there is no clear relationship; indeed the Bayesian network described by the DAG may not relate to the causal model. Typically, discrete observations of a process will obscure the conditional dependencies that are represented in the underlying mechanistic model of the process. It is therefore doubtful whether DAGs are always suited to describe causal relationships unless time is explicitly considered in the model. We relate the issues to mechanistic modeling by using the concept of local (in)dependence. An example using data from the Swiss HIV Cohort Study is presented.},
+	language = {en},
+	number = {5},
+	urldate = {2019-07-02},
+	journal = {Statistical Methods in Medical Research},
+	author = {Aalen, Oo and Røysland, K and Gran, Jm and Kouyos, R and Lange, T},
+	month = oct,
+	year = {2016},
+	pages = {2294--2314},
+	file = {Aalen et al. - 2016 - Can we believe the DAGs A comment on the relation.pdf:C\:\\Users\\alex\\Zotero\\storage\\FIMT7NVQ\\Aalen et al. - 2016 - Can we believe the DAGs A comment on the relation.pdf:application/pdf;Aalen et al. - 2016 - Can we believe the DAGs A comment on the relation.pdf:C\:\\Users\\alex\\Zotero\\storage\\2T8A53F8\\Aalen et al. - 2016 - Can we believe the DAGs A comment on the relation.pdf:application/pdf}
+}
+
+@article{commenges_general_2009,
+	title = {A general dynamical statistical model with causal interpretation},
+	volume = {71},
+	issn = {13697412, 14679868},
+	url = {http://doi.wiley.com/10.1111/j.1467-9868.2009.00703.x},
+	doi = {10.1111/j.1467-9868.2009.00703.x},
+	abstract = {We develop a general dynamical model as a framework for causal interpretation. We first state a criterion of local independence in terms of measurability of processes that are involved in the Doob-Meyer decomposition of stochastic processes; then we define direct and indirect influence. We propose a definition of causal influence using the concepts of a 'physical system'. This framework makes it possible to link descriptive and explicative statistical models, and encompasses quantitative processes and events. One of the features of the paper is the clear distinction between the model for the system and the model for the observation. We give a dynamical representation of a conventional joint model for human immunodeficiency virus load and CD4 cell counts. We show its inadequacy to capture causal influences whereas in contrast known mechanisms of infection by the human immunodeficiency virus can be expressed directly through a system of differential equations.},
+	language = {en},
+	number = {3},
+	urldate = {2019-07-09},
+	journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+	author = {Commenges, Daniel and Gégout-Petit, Anne},
+	month = jun,
+	year = {2009},
+	pages = {719--736},
+	file = {Commenges and Gégout-Petit - 2009 - A general dynamical statistical model with causal .pdf:C\:\\Users\\alex\\Zotero\\storage\\2RQE965W\\Commenges and Gégout-Petit - 2009 - A general dynamical statistical model with causal .pdf:application/pdf}
+}
+
+@article{laan_generally_2015,
+	title = {A {Generally}  {Efficient} {Targeted} {Minimum} {Loss} {Based} {Estimator}},
+	author = {Laan, M. J. van der},
+	year = {2015},
+	file = {Laan - 2015 - A Generally  Efficient Targeted Minimum Loss Based.pdf:C\:\\Users\\alex\\Zotero\\storage\\ZXG26NCC\\Laan - 2015 - A Generally  Efficient Targeted Minimum Loss Based.pdf:application/pdf}
+}
+
+@book{pearl_causality_2009,
+	title = {Causality: {Models}, {Reasoning} and {Inference}},
+	publisher = {Cambridge University Press},
+	author = {Pearl, Judea},
+	year = {2009},
+	file = {Pearl - 2009 - Causality Models, Reasoning and Inference.pdf:C\:\\Users\\alex\\Zotero\\storage\\C4YFXGJ9\\Pearl - 2009 - Causality Models, Reasoning and Inference.pdf:application/pdf}
+}
+
+@article{rothenhausler_anchor_2018,
+	title = {Anchor regression: heterogeneous data meets causality},
+	shorttitle = {Anchor regression},
+	url = {http://arxiv.org/abs/1801.06229},
+	abstract = {Estimating causal parameters from observational data is notoriously diﬃcult. Popular approaches such as regression adjustment or the instrumental variables approach only work under relatively strong assumptions and are prone to mistakes. Furthermore, causal parameters can exhibit conservative predictive performance which can limit their usefulness in practice.},
+	language = {en},
+	urldate = {2019-07-15},
+	journal = {arXiv:1801.06229 [stat]},
+	author = {Rothenhäusler, Dominik and Meinshausen, Nicolai and Bühlmann, Peter and Peters, Jonas},
+	month = jan,
+	year = {2018},
+	note = {arXiv: 1801.06229},
+	keywords = {Statistics - Methodology},
+	file = {Rothenhäusler et al. - 2018 - Anchor regression heterogeneous data meets causal.pdf:C\:\\Users\\alex\\Zotero\\storage\\EHB4TC54\\Rothenhäusler et al. - 2018 - Anchor regression heterogeneous data meets causal.pdf:application/pdf}
+}
+
+@article{imbens_potential_2019,
+	title = {Potential {Outcome} and {Directed} {Acyclic} {Graph} {Approaches} to {Causality}: {Relevance} for {Empirical} {Practice} in {Economics}},
+	shorttitle = {Potential {Outcome} and {Directed} {Acyclic} {Graph} {Approaches} to {Causality}},
+	url = {http://arxiv.org/abs/1907.07271},
+	abstract = {In this essay I discuss potential outcome and graphical approaches to causality, and their relevance for empirical work in economics. I review some of the work on directed acyclic graphs, including the recent “The Book of Why,” ([Pearl and Mackenzie, 2018]). I also discuss the potential outcome framework developed by Rubin and coauthors, building on work by Neyman. I then discuss the relative merits of these approaches for empirical work in economics, focusing on the questions each answer well, and why much of the the work in economics is closer in spirit to the potential outcome framework.},
+	language = {en},
+	urldate = {2019-07-19},
+	journal = {arXiv:1907.07271 [stat]},
+	author = {Imbens, Guido W.},
+	month = jul,
+	year = {2019},
+	note = {arXiv: 1907.07271},
+	keywords = {Statistics - Methodology},
+	file = {Imbens - 2019 - Potential Outcome and Directed Acyclic Graph Appro.pdf:C\:\\Users\\alex\\Zotero\\storage\\EPMDQCZW\\Imbens - 2019 - Potential Outcome and Directed Acyclic Graph Appro.pdf:application/pdf}
+}
+
+@book{beebee_oxford_2009,
+	title = {The {Oxford} {Handbook} of {Causation}},
+	publisher = {Oxford University Press},
+	author = {Beebee, Helen and Hitchcock, Christopher and Menzies, Peter},
+	year = {2009},
+	file = {(Oxford Handbooks) Helen Beebee, Christopher Hitchcock, Peter Menzies (Editors) - The Oxford Handbook of Causation-Oxford University Press (2009).pdf:C\:\\Users\\alex\\Zotero\\storage\\E7CY57NE\\(Oxford Handbooks) Helen Beebee, Christopher Hitchcock, Peter Menzies (Editors) - The Oxford Handbook of Causation-Oxford University Press (2009).pdf:application/pdf}
+}
+
+@misc{pearl_intuition_2009,
+	title = {The {Intuition} {Behind} {Inverse} {Probability} {Weighting}},
+	url = {http://causality.cs.ucla.edu/blog/wp-content/uploads/2009/11/foster-pearl-blog.pdf},
+	urldate = {2019-07-18},
+	author = {Pearl, Judea},
+	year = {2009},
+	file = {Pearl - 2009 - The Intuition Behind Inverse Probability Weighting.pdf:C\:\\Users\\alex\\Zotero\\storage\\FU35D7UI\\Pearl - 2009 - The Intuition Behind Inverse Probability Weighting.pdf:application/pdf}
+}
+
+@article{tchetgen_auto-g-computation_2017,
+	title = {Auto-{G}-{Computation} of {Causal} {Effects} on a {Network}},
+	url = {http://arxiv.org/abs/1709.01577},
+	abstract = {Methods for inferring average causal eﬀects have traditionally relied on two key assumptions: (i) the intervention received by one unit cannot causally inﬂuence the outcome of another; and (ii) units can be organized into non-overlapping groups such that outcomes of units in separate groups are independent. In this paper, we develop new statistical methods for causal inference based on a single realization of a network of connected units for which neither assumption (i) nor (ii) holds. The proposed approach allows both for arbitrary forms of interference, whereby the outcome of a unit may depend on interventions received by other units with whom a network path through connected units exists; and long range dependence, whereby outcomes for any two units likewise connected by a path in the network may be dependent. Under network versions of consistency and no unobserved confounding, inference is made tractable by an assumption that the networks outcome, treatment and covariate vectors are a single realization of a certain chain graph model. This assumption allows inferences about various network causal eﬀects via the auto-g-computation algorithm, a network generalization of Robins’ well-known g-computation algorithm previously described for causal inference under assumptions (i) and (ii).},
+	language = {en},
+	urldate = {2019-08-23},
+	journal = {arXiv:1709.01577 [stat]},
+	author = {Tchetgen, Eric J. Tchetgen and Fulcher, Isabel and Shpitser, Ilya},
+	month = sep,
+	year = {2017},
+	note = {arXiv: 1709.01577},
+	keywords = {Statistics - Methodology},
+	file = {Tchetgen et al. - 2017 - Auto-G-Computation of Causal Effects on a Network.pdf:C\:\\Users\\alex\\Zotero\\storage\\2RJKNF7W\\Tchetgen et al. - 2017 - Auto-G-Computation of Causal Effects on a Network.pdf:application/pdf}
+}
+
+@misc{hunermund_dont_2019,
+	title = {Don’t {Put} {Too} {Much} {Meaning} {Into} {Control} {Variables}},
+	url = {https://p-hunermund.com/2019/04/28/dont-put-too-much-meaning-into-control-variables/},
+	abstract = {I’m currently reading this great paper by Carlos Cinelli and Chad Hazlett: “Making Sense of Sensitivity: Extending Omitted Variable Bias”. They develop a full suite of sensitivity…},
+	language = {en},
+	urldate = {2019-09-03},
+	journal = {Paul Hünermund},
+	author = {Hünermund, Author Paul},
+	month = apr,
+	year = {2019},
+	file = {Snapshot:C\:\\Users\\alex\\Zotero\\storage\\C29XAUQD\\dont-put-too-much-meaning-into-control-variables.html:text/html}
+}
+
+@article{abadie_synthetic_2010,
+	title = {Synthetic {Control} {Methods} for {Comparative} {Case} {Studies}: {Estimating} the {Effect} of {California}’s {Tobacco} {Control} {Program}},
+	volume = {105},
+	issn = {0162-1459, 1537-274X},
+	shorttitle = {Synthetic {Control} {Methods} for {Comparative} {Case} {Studies}},
+	url = {http://www.tandfonline.com/doi/abs/10.1198/jasa.2009.ap08746},
+	doi = {10.1198/jasa.2009.ap08746},
+	language = {en},
+	number = {490},
+	urldate = {2019-09-05},
+	journal = {Journal of the American Statistical Association},
+	author = {Abadie, Alberto and Diamond, Alexis and Hainmueller, Jens},
+	month = jun,
+	year = {2010},
+	pages = {493--505},
+	file = {Abadie et al. - 2010 - Synthetic Control Methods for Comparative Case Stu.pdf:C\:\\Users\\alex\\Zotero\\storage\\G5IHHU8M\\Abadie et al. - 2010 - Synthetic Control Methods for Comparative Case Stu.pdf:application/pdf}
+}
+
+@article{abadie_comparative_2015,
+	title = {Comparative {Politics} and the {Synthetic} {Control} {Method}: {COMPARATIVE} {POLITICS} {AND} {THE} {SYNTHETIC} {CONTROL} {METHOD}},
+	volume = {59},
+	issn = {00925853},
+	shorttitle = {Comparative {Politics} and the {Synthetic} {Control} {Method}},
+	url = {http://doi.wiley.com/10.1111/ajps.12116},
+	doi = {10.1111/ajps.12116},
+	language = {en},
+	number = {2},
+	urldate = {2019-09-10},
+	journal = {American Journal of Political Science},
+	author = {Abadie, Alberto and Diamond, Alexis and Hainmueller, Jens},
+	month = feb,
+	year = {2015},
+	pages = {495--510},
+	file = {Abadie et al. - 2015 - Comparative Politics and the Synthetic Control Met.pdf:C\:\\Users\\alex\\Zotero\\storage\\9IRDL492\\Abadie et al. - 2015 - Comparative Politics and the Synthetic Control Met.pdf:application/pdf}
+}
+
+@book{rosenbaum_design_2010,
+	address = {New York},
+	series = {Springer series in statistics},
+	title = {Design of observational studies},
+	isbn = {978-1-4419-1212-1 978-1-4419-1213-8},
+	language = {en},
+	publisher = {Springer},
+	author = {Rosenbaum, Paul R.},
+	year = {2010},
+	note = {OCLC: ocn444428720},
+	keywords = {Analysis of variance, Experimental design, Beobachtungsstudie},
+	file = {Rosenbaum - 2010 - Design of observational studies.pdf:C\:\\Users\\alex\\Zotero\\storage\\GYW6T99G\\Rosenbaum - 2010 - Design of observational studies.pdf:application/pdf}
+}
+
+@article{rosenbaum_covariance_nodate,
+	title = {Covariance {Adjustment} in {Randomized} {Experiments} and {Observational} {Studies}},
+	abstract = {By slightly reframing the concept of covariance adjustment in randomized experiments, a method of exact permutation inference is derived that is entirely free of distributional assumptions and uses the random assignment of treatments as the “reasoned basis for inference.” This method of exact permutation inference may be used with many forms of covariance adjustment, including robust regression and locally weighted smoothers. The method is then generalized to observational studies where treatments were not randomly assigned, so that sensitivity to hidden biases must be examined. Adjustments using an instrumental variable are also discussed. The methods are illustrated using data from two observational studies.},
+	language = {en},
+	author = {Rosenbaum, Paul R},
+	pages = {42},
+	file = {Rosenbaum - Covariance Adjustment in Randomized Experiments an.pdf:C\:\\Users\\alex\\Zotero\\storage\\ZNJDEW8K\\Rosenbaum - Covariance Adjustment in Randomized Experiments an.pdf:application/pdf}
+}
+
+@book{cartwright_hunting_2007,
+	title = {Hunting {Causes} and {Using} {Them}: {Approaches} in {Philosophy} and {Economics}},
+	language = {en},
+	author = {Cartwright, Nancy},
+	year = {2007},
+	file = {Cartwright - Hunting Causes and Using Them Approaches in Philo.pdf:C\:\\Users\\alex\\Zotero\\storage\\53KH46A8\\Cartwright - Hunting Causes and Using Them Approaches in Philo.pdf:application/pdf}
+}
+
+@article{shimizu_discovery_nodate,
+	title = {Discovery of non-gaussian linear causal models using {ICA}},
+	abstract = {In recent years, several methods have been proposed for the discovery of causal structure from non-experimental data (Spirtes et al. 2000; Pearl 2000). Such methods make various assumptions on the data generating process to facilitate its identiﬁcation from purely observational data. Continuing this line of research, we show how to discover the complete causal structure of continuous-valued data, under the assumptions that (a) the data generating process is linear, (b) there are no unobserved confounders, and (c) disturbance variables have non-gaussian distributions of non-zero variances. The solution relies on the use of the statistical method known as independent component analysis (ICA), and does not require any pre-speciﬁed time-ordering of the variables. We provide a complete Matlab package for performing this LiNGAM analysis (short for Linear Non-Gaussian Acyclic Model), and demonstrate the eﬀectiveness of the method using artiﬁcially generated data.},
+	language = {en},
+	author = {Shimizu, Shohei and Hyvarinen, Aapo and Kano, Yutaka and Hoyer, Patrik O},
+	pages = {8},
+	file = {Shimizu et al. - Discovery of non-gaussian linear causal models usi.pdf:C\:\\Users\\alex\\Zotero\\storage\\YUS9J4BP\\Shimizu et al. - Discovery of non-gaussian linear causal models usi.pdf:application/pdf}
+}
+
+@article{mcinnes_umap_2018,
+	title = {{UMAP}: {Uniform} {Manifold} {Approximation} and {Projection} for {Dimension} {Reduction}},
+	shorttitle = {{UMAP}},
+	url = {http://arxiv.org/abs/1802.03426},
+	abstract = {UMAP (Uniform Manifold Approximation and Projection) is a novel manifold learning technique for dimension reduction. UMAP is constructed from a theoretical framework based in Riemannian geometry and algebraic topology. e result is a practical scalable algorithm that applies to real world data. e UMAP algorithm is competitive with t-SNE for visualization quality, and arguably preserves more of the global structure with superior run time performance. Furthermore, UMAP has no computational restrictions on embedding dimension, making it viable as a general purpose dimension reduction technique for machine learning.},
+	language = {en},
+	urldate = {2019-10-04},
+	journal = {arXiv:1802.03426 [cs, stat]},
+	author = {McInnes, Leland and Healy, John and Melville, James},
+	month = feb,
+	year = {2018},
+	note = {arXiv: 1802.03426},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Computational Geometry},
+	annote = {Comment: Reference implementation available at http://github.com/lmcinnes/umap},
+	file = {McInnes et al. - 2018 - UMAP Uniform Manifold Approximation and Projectio.pdf:C\:\\Users\\alex\\Zotero\\storage\\QAEESLNU\\McInnes et al. - 2018 - UMAP Uniform Manifold Approximation and Projectio.pdf:application/pdf}
+}
+
+@article{rodriguez_models_nodate,
+	title = {Models for {Count} {Data} {With} {Overdispersion}},
+	abstract = {This addendum to the WWS 509 notes covers extra-Poisson variation and the negative binomial model, with brief appearances by zeroinﬂated and hurdle models.},
+	language = {en},
+	author = {Rodrıguez, German},
+	pages = {7},
+	file = {Rodrıguez - Models for Count Data With Overdispersion.pdf:C\:\\Users\\alex\\Zotero\\storage\\DAFXSQPA\\Rodrıguez - Models for Count Data With Overdispersion.pdf:application/pdf}
+}
+
+@article{rodriguez_models_nodate-1,
+	title = {Models for {Longitudinal} and {Clustered} {Data}},
+	language = {en},
+	author = {Rodrıguez, German},
+	pages = {14},
+	file = {Rodrıguez - Models for Longitudinal and Clustered Data.pdf:C\:\\Users\\alex\\Zotero\\storage\\JUKCP25R\\Rodrıguez - Models for Longitudinal and Clustered Data.pdf:application/pdf}
+}
+
+@article{tsiatis_comment_2007,
+	title = {Comment: {Demystifying} {Double} {Robustness}: {A} {Comparison} of {Alternative} {Strategies} for {Estimating} a {Population} {Mean} from {Incomplete} {Data}},
+	language = {en},
+	author = {Tsiatis, Anastasios A and Davidian, Marie},
+	year = {2007},
+	pages = {5},
+	file = {Tsiatis and Davidian - Comment Demystifying Double Robustness A Compari.pdf:C\:\\Users\\alex\\Zotero\\storage\\F72UIPLD\\Tsiatis and Davidian - Comment Demystifying Double Robustness A Compari.pdf:application/pdf}
+}
+
+@misc{cinelli_causal_2019,
+	title = {Causal {Analysis} in {Theory} and {Practice} » {A} {Crash} {Course} in {Good} and {Bad} {Control}},
+	url = {http://causality.cs.ucla.edu/blog/index.php/2019/08/14/a-crash-course-in-good-and-bad-control/},
+	urldate = {2019-10-13},
+	author = {Cinelli, Carlos and Forney, Andrew and Pearl, Judea},
+	year = {2019},
+	file = {Snapshot:C\:\\Users\\alex\\Zotero\\storage\\M7FZPU7E\\a-crash-course-in-good-and-bad-control.html:text/html}
+}
+
+@article{robins_new_1986,
+	title = {A new approach to causal inference in mortality studies with a sustained exposure period—application to control of the healthy worker survivor effect},
+	volume = {7},
+	issn = {02700255},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/0270025586900886},
+	doi = {10.1016/0270-0255(86)90088-6},
+	abstract = {In observational cohort mortality studies with prolonged periods of exposure to the agent under study, it is not uncommon for risk factors for death to be determinants of subsequent exposure. For instance, in occupational mortality studies date of termination of employment is both a determinant of future exposure (since terminated individuals receive no further exposure) and an independent risk factor for death (since disabled individuals tend to leave empioyment). When current risk factor status determines subsequent exposure and is determined by previous exposure, standard analyses that estimate age-specific mortality rates as a function of cumulative exposure may underestimate the true effect of exposure on mortality whether or not one adjusts for the risk factor in the analysis. This observation raises the question, which if any population parameters can be given a causal interpretation in observational mortality studies? In answer, we offer a graphical approach to the identification and computation of causal parameters in mortality studies with sustained exposure periods. This approach is shown to be equivalent to an approach in which the observational study is identified with a hypothetical double-blind randomized trial in which data on each subject’s assigned treatment protocol has been erased from the data tile. Causal inferences can then be made by comparing mortality as a function of treatment protocol, since, in a double-blind randomized trial missing data on treatment protocol, the association of mortality with treatment protocol can still be estimated.},
+	language = {en},
+	number = {9-12},
+	urldate = {2019-10-13},
+	journal = {Mathematical Modelling},
+	author = {Robins, James},
+	year = {1986},
+	pages = {1393--1512},
+	file = {Robins - 1986 - A new approach to causal inference in mortality st.pdf:C\:\\Users\\alex\\Zotero\\storage\\I6U8E9KL\\Robins - 1986 - A new approach to causal inference in mortality st.pdf:application/pdf}
+}
+
+@article{robins_estimation_1992,
+	title = {Estimation of the time-dependent accelerated failure time model in the presence of confounding factors},
+	url = {https://cdn1.sph.harvard.edu/wp-content/uploads/sites/343/2013/03/estim-1992.pdf},
+	urldate = {2019-10-13},
+	journal = {Biometrika},
+	author = {Robins, JM},
+	year = {1992},
+	file = {estim-1992.pdf:C\:\\Users\\alex\\Zotero\\storage\\8GB3TQ68\\estim-1992.pdf:application/pdf}
+}
+
+@article{robins_analysis_1989,
+	title = {The analysis of randomized and non-randomized {AIDS} treatment trials using a new approach to causal inference in longitudinal studies},
+	url = {https://cdn1.sph.harvard.edu/wp-content/uploads/sites/343/2013/03/nchsr.pdf},
+	urldate = {2019-10-13},
+	author = {Robins, JM},
+	year = {1989},
+	file = {nchsr.pdf:C\:\\Users\\alex\\Zotero\\storage\\B2BUEHFF\\nchsr.pdf:application/pdf}
+}
+
+@article{robins_estimation_1994,
+	title = {Estimation of {Regression} {Coefficients} {When} {Some} {Regressors} {Are} {Not} {Always} {Observed}},
+	language = {en},
+	author = {Robins, James M and Rotnitzky, Andrea and Zhao, Lue Ping},
+	year = {1994},
+	pages = {22},
+	file = {Robins et al. - Estimation of Regression Coefficients When Some Re.pdf:C\:\\Users\\alex\\Zotero\\storage\\69MBX83R\\Robins et al. - Estimation of Regression Coefficients When Some Re.pdf:application/pdf}
+}
+
+@article{scharfstein_adjusting_1999,
+	title = {Adjusting for {Nonignorable} {Drop}-{Out} {Using} {Semiparametric} {Nonresponse} {Models}},
+	volume = {94},
+	issn = {0162-1459, 1537-274X},
+	url = {http://www.tandfonline.com/doi/abs/10.1080/01621459.1999.10473862},
+	doi = {10.1080/01621459.1999.10473862},
+	language = {en},
+	number = {448},
+	urldate = {2019-10-14},
+	journal = {Journal of the American Statistical Association},
+	author = {Scharfstein, Daniel O. and Rotnitzky, Andrea and Robins, James M.},
+	month = dec,
+	year = {1999},
+	pages = {1096--1120},
+	file = {Scharfstein et al. - 1999 - Adjusting for Nonignorable Drop-Out Using Semipara.pdf:C\:\\Users\\alex\\Zotero\\storage\\NZMWT5AM\\Scharfstein et al. - 1999 - Adjusting for Nonignorable Drop-Out Using Semipara.pdf:application/pdf}
+}
+
+@article{rotnitzky_analysis_1997,
+	title = {Analysis of {Semi}-{Parametric} {Regression} {Models} with {Non}-{Ignorable} {Non}-{Response}},
+	volume = {16},
+	issn = {1097-0258},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0258%2819970115%2916%3A1%3C81%3A%3AAID-SIM473%3E3.0.CO%3B2-0},
+	doi = {10.1002/(SICI)1097-0258(19970115)16:1<81::AID-SIM473>3.0.CO;2-0},
+	abstract = {In this article we consider the problem of making inferences about the parameter β0 indexing the conditional mean of an outcome given a vector of regressors when a subset of the variables (outcome or covariates) are missing for some study subjects and the probability of non-response depends upon both observed and unobserved data values, that is, non-response is non-ignorable. We propose a new class of inverse probability of censoring weighted estimators that are consistent and asymptotically normal (CAN) for estimating β0 when the non-response probabilities can be parametrically modelled and a CAN estimator exists. The proposed estimators do not require full specification of the likelihood and their computation does not require numerical integration. We show that the asymptotic variance of the optimal estimator in our class attains the semi-parametric variance bound for the model. In some models, no CAN estimator of β0 exists. We provide a general algorithm for determining when CAN estimators of β0 exist. Our results follow after specializing a general representation described in the article for the efficient score and the influence function of regular, asymptotically linear estimators in an arbitrary semi-parametric model with non-ignorable non-response in which the probability of observing complete data is bounded away from zero and the non-response probabilities can be parametrically modelled. © 1997 by John Wiley \& Sons, Ltd.},
+	language = {en},
+	number = {1},
+	urldate = {2019-10-14},
+	journal = {Statistics in Medicine},
+	author = {Rotnitzky, Andrea and Robins, James},
+	year = {1997},
+	pages = {81--102},
+	file = {Full Text PDF:C\:\\Users\\alex\\Zotero\\storage\\CR8LAYBI\\Rotnitzky and Robins - 1997 - Analysis of Semi-Parametric Regression Models with.pdf:application/pdf;Snapshot:C\:\\Users\\alex\\Zotero\\storage\\UW6JKHDZ\\(SICI)1097-0258(19970115)16181AID-SIM4733.0.html:text/html}
+}
